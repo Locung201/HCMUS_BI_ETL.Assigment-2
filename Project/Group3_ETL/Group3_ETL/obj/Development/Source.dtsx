@@ -1,0 +1,1752 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/17/2024 11:36:39 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-FQ4LAV5"
+  DTS:CreatorName="DESKTOP-FQ4LAV5\Nguyen"
+  DTS:DTSID="{EF9FD248-E67E-4A03-B54A-2FD1C1DB1708}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Source"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{FE5C2F09-969D-495E-A052-BF36F49369B6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{43B23A7C-B243-4EAD-B520-E1C9E4DAF1CF}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=21127699_ETL_Assigment;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{43B23A7C-B243-4EAD-B520-E1C9E4DAF1CF}DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F004CCD1-ACF3-4FA0-B82D-0724B29C783F}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=21127699_ETL_Assigment;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{F004CCD1-ACF3-4FA0-B82D-0724B29C783F}DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A4FF0083-7DE9-4830-8CBC-E82F42C7D5B7}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=21127699_ETL_Assigment;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Source-{A4FF0083-7DE9-4830-8CBC-E82F42C7D5B7}DESKTOP-FQ4LAV5\LOLONUT.21127699_ETL_Assigment 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{09D401DA-5825-4D62-9A0C-1C0D87CFFFAC}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=Group3_ETL_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Source-{09D401DA-5825-4D62-9A0C-1C0D87CFFFAC}DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4DD6F41F-6551-4B13-9A05-DAF03943AD8B}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=Group3_ETL_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Source-{4DD6F41F-6551-4B13-9A05-DAF03943AD8B}DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{35248E9C-A6E0-4540-8815-C3F77AF5F8BC}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=Group3_ETL_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Source-{35248E9C-A6E0-4540-8815-C3F77AF5F8BC}DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4BE52EA9-5999-4D6D-B60F-79C44C43C4CB}"
+      DTS:ObjectName="DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-FQ4LAV5\LOLONUT;Initial Catalog=Group3_ETL_Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Source-{4BE52EA9-5999-4D6D-B60F-79C44C43C4CB}DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B2ED85FB-09D7-4380-98AE-D97CC91D25A0}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A932542C-8C50-42D2-8E4F-E09EDC00CDA8}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Nguyen\Downloads\ETL.Source.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 10]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{72760DAB-A1E4-4C7B-B8DD-A3C4E5B275A4}"
+      DTS:ObjectName="Excel Connection Manager 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{68BEBAA9-964B-4DF3-9576-681C11320C9B}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 12]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{1CD395CC-1D9B-49A7-A0CC-F375EABC04BF}"
+      DTS:ObjectName="Excel Connection Manager 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 13]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{2DAC1FE5-E446-4683-97AB-F7EA3556B937}"
+      DTS:ObjectName="Excel Connection Manager 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 14]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{19B81569-CD2A-44EE-B80C-CEFD206964B7}"
+      DTS:ObjectName="Excel Connection Manager 14">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 15]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C9D50B1E-E0B4-4653-8541-9EF2CCF510DA}"
+      DTS:ObjectName="Excel Connection Manager 15">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 16]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8A15CD0B-C123-4519-9502-E732C5AD6EB5}"
+      DTS:ObjectName="Excel Connection Manager 16">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{0FA9256A-6F0F-432F-8EC4-9F07CE704F56}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Nguyen\Downloads\ETL.Source.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6D9A2823-BD28-49E7-8A0C-C8EDFF3C0DF6}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{AD1FCE22-37FA-422C-B744-963A6DB718E4}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8FC26C48-81AF-4EEA-8ECF-6A60D0C8B543}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CF992B0F-AF97-4918-B713-4E550283E8DE}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{2FE215FC-52A2-484F-84AD-D8384E715C2B}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A55E49A4-F83C-46E1-B6A8-045891884A73}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 9]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6A19AACE-5B59-4A7C-95A8-C4FB18AA4AFC}"
+      DTS:ObjectName="Excel Connection Manager 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\lolo\lo hc\BI\Group3_ETL\Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{cf7bb821-b233-4d04-9b84-a18e8226308b}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Diem"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Diem"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Diem$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Diem.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 16]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 16]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaMH]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[MaMH]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaMH]"
+                      name="MaMH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaHS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[MaHS]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaHS]"
+                      name="MaHS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[Diem]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[Diem]"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[Diem]"
+                      name="Diem"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaMH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaHS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].ExternalColumns[Diem]"
+                      dataType="r8"
+                      name="Diem" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[MaHS]"
+                      name="MaHS" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[MaMH]"
+                      name="MaMH" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[Diem]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[Diem]"
+                      name="Diem" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Diem_Stage"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Diem_Stage"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Diem_Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Diem_Stage.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].Columns[MaMH]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaMH"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaMH]"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaMH]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].Columns[MaHS]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaHS"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaHS]"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[MaHS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].Columns[Diem]"
+                      cachedDataType="r8"
+                      cachedName="Diem"
+                      externalMetadataColumnId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Diem]"
+                      lineageId="Package\Data Flow Task\Diem.Outputs[Excel Source Output].Columns[Diem]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Create_day]"
+                      dataType="dbDate"
+                      name="Create_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Update_day]"
+                      dataType="dbDate"
+                      name="Update_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaMH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaHS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Diem]"
+                      dataType="r8"
+                      name="Diem" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Diem_Stage.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Diem_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Diem_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Diem_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HocSinh"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="HocSinh"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">HocSinh$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HocSinh.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 13]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 13]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaLop]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[MaLop]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaLop]"
+                      name="MaLop"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaHS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[MaHS]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaHS]"
+                      name="MaHS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[TenHS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[TenHS]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[TenHS]"
+                      name="TenHS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[NgaySinh]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[NgaySinh]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[NgaySinh]"
+                      name="NgaySinh"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[GioiTinh]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[GioiTinh]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[GioiTinh]"
+                      name="GioiTinh"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaLop" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaHS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[TenHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="TenHS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[NgaySinh]"
+                      dataType="date"
+                      name="NgaySinh" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].ExternalColumns[GioiTinh]"
+                      dataType="wstr"
+                      length="255"
+                      name="GioiTinh" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[MaHS]"
+                      name="MaHS" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[TenHS]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[TenHS]"
+                      name="TenHS" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[NgaySinh]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[NgaySinh]"
+                      name="NgaySinh" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[GioiTinh]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[GioiTinh]"
+                      name="GioiTinh" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[MaLop]"
+                      name="MaLop" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\HocSinh_Stage"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="HocSinh_Stage"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[HocSinh_Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\HocSinh_Stage.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].Columns[MaLop]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaLop"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaLop]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaLop]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].Columns[MaHS]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaHS"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaHS]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[MaHS]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].Columns[NgaySinh]"
+                      cachedDataType="date"
+                      cachedName="NgaySinh"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[NgaySinh]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[NgaySinh]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].Columns[GioiTinh]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="GioiTinh"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[GioiTinh]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[GioiTinh]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].Columns[TenHS]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TenHS"
+                      externalMetadataColumnId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[HoTenHS]"
+                      lineageId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output].Columns[TenHS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaLop" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaHS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[NgaySinh]"
+                      dataType="dbDate"
+                      name="NgaySinh" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[GioiTinh]"
+                      dataType="wstr"
+                      length="255"
+                      name="GioiTinh" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Create_day]"
+                      dataType="dbDate"
+                      name="Create_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Update_day]"
+                      dataType="dbDate"
+                      name="Update_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input].ExternalColumns[HoTenHS]"
+                      dataType="wstr"
+                      length="255"
+                      name="HoTenHS" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\HocSinh_Stage.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HocSinh_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\HocSinh_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\HocSinh_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\LopHoc"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="LopHoc"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">LopHoc$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\LopHoc.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 14]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 14]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[MaLop]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].ExternalColumns[MaLop]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[MaLop]"
+                      name="MaLop"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[TenLop]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].ExternalColumns[TenLop]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[TenLop]"
+                      name="TenLop"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].ExternalColumns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaLop" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].ExternalColumns[TenLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="TenLop" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[MaLop]"
+                      name="MaLop" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[TenLop]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[TenLop]"
+                      name="TenLop" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\LopHoc_Stage"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="LopHoc_Stage"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[LopHoc_Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\LopHoc_Stage.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].Columns[MaLop]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaLop"
+                      externalMetadataColumnId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaLop]"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[MaLop]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].Columns[TenLop]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TenLop"
+                      externalMetadataColumnId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[TenLop]"
+                      lineageId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output].Columns[TenLop]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaLop" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Create_day]"
+                      dataType="dbDate"
+                      name="Create_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Update_day]"
+                      dataType="dbDate"
+                      name="Update_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[TenLop]"
+                      dataType="wstr"
+                      length="255"
+                      name="TenLop" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\LopHoc_Stage.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LopHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LopHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LopHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MonHoc"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="MonHoc"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">MonHoc$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\MonHoc.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 15]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 15]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[MaMH]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].ExternalColumns[MaMH]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[MaMH]"
+                      name="MaMH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[TenMH]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].ExternalColumns[TenMH]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[TenMH]"
+                      name="TenMH"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].ExternalColumns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaMH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].ExternalColumns[TenMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="TenMH" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[MaMH]"
+                      name="MaMH" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[TenMH]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[TenMH]"
+                      name="TenMH" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MonHoc_Stage"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="MonHoc_Stage"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[MonHoc_Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\MonHoc_Stage.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-FQ4LAV5\LOLONUT.Group3_ETL_Stage 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].Columns[MaMH]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="MaMH"
+                      externalMetadataColumnId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaMH]"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[MaMH]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].Columns[TenMH]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TenMH"
+                      externalMetadataColumnId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[TenMH]"
+                      lineageId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output].Columns[TenMH]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Create_day]"
+                      dataType="dbDate"
+                      name="Create_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[Update_day]"
+                      dataType="dbDate"
+                      name="Update_day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[MaMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="MaMH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input].ExternalColumns[TenMH]"
+                      dataType="wstr"
+                      length="255"
+                      name="TenMH" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MonHoc_Stage.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\MonHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\MonHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\MonHoc_Stage.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task\HocSinh_Stage.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\HocSinh.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output1]"
+              endId="Package\Data Flow Task\LopHoc_Stage.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\LopHoc.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output2]"
+              endId="Package\Data Flow Task\MonHoc_Stage.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\MonHoc.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output3]"
+              endId="Package\Data Flow Task\Diem_Stage.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Diem.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task"
+          TopLeft="59,58" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Data Flow Task\HocSinh"
+          TopLeft="94.1666666666667,45.5" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\MonHoc_Stage"
+          TopLeft="544,253" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\MonHoc"
+          TopLeft="554,43" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\HocSinh_Stage"
+          TopLeft="71,259" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Data Flow Task\Diem_Stage"
+          TopLeft="784,251" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\LopHoc_Stage"
+          TopLeft="308,256" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Data Flow Task\LopHoc"
+          TopLeft="322,47" />
+        <NodeLayout
+          Size="105,42"
+          Id="Package\Data Flow Task\Diem"
+          TopLeft="807,39" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output3]"
+          TopLeft="856.75,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,170"
+              Start="0,0"
+              End="0,162.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,162.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output2]"
+          TopLeft="617.75,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,168"
+              Start="0,0"
+              End="0,160.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,160.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output1]"
+          TopLeft="382.25,89">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,167"
+              Start="0,0"
+              End="0,159.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,159.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="151.583333333333,87.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,171.5"
+              Start="0,0"
+              End="0,164">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,164" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HocSinh">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\MonHoc_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\MonHoc">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\HocSinh_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Diem_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\LopHoc_Stage">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\LopHoc">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Diem">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
